@@ -1,26 +1,92 @@
 @import "tailwindcss";
 
 :root {
-  --background: #ffffff;
-  --foreground: #171717;
+  --background: #f5f5f5;
+  --foreground: #111111;
+
+  --primary: #ff5c00;
+  --secondary: #00d9ff;
+  --accent: #ffe600;
+
+  --card: #ffffff;
 }
 
-@theme inline {
-  --color-background: var(--background);
-  --color-foreground: var(--foreground);
-  --font-sans: var(--font-geist-sans);
-  --font-mono: var(--font-geist-mono);
+.dark {
+  --background: #111111;
+  --foreground: #ffffff;
+  --card: #1e1e1e;
 }
 
-@media (prefers-color-scheme: dark) {
-  :root {
-    --background: #0a0a0a;
-    --foreground: #ededed;
-  }
+html {
+  scroll-behavior: smooth;
 }
 
 body {
   background: var(--background);
   color: var(--foreground);
   font-family: Arial, Helvetica, sans-serif;
+  overflow-x: hidden;
+}
+
+section {
+  position: relative;
+  overflow: hidden;
+}
+
+/* Neuro Brutalism Utilities */
+/* Neuro Brutalism Utilities */
+
+.neuro-card {
+  border: 4px solid black;
+  
+  /* HAPUS BARIS INI: background: var(--card); atau background-color: var(--card); */
+  
+  box-shadow: 8px 8px 0px black;
+  transition: all 0.2s ease;
+}
+
+.neuro-card:hover {
+  transform: translate(-4px, -4px);
+  box-shadow: 12px 12px 0px black;
+}
+
+.neuro-button {
+  border: 4px solid black;
+  box-shadow: 6px 6px 0px black;
+  transition: all 0.2s ease;
+}
+
+.neuro-button:hover {
+  transform: translate(-3px, -3px);
+  box-shadow: 10px 10px 0px black;
+}
+
+.dark .neuro-card {
+  border-color: white;
+  box-shadow: 8px 8px 0px white;
+}
+
+.dark .neuro-card:hover {
+  box-shadow: 12px 12px 0px white;
+}
+
+.dark .neuro-button {
+  border-color: white;
+  box-shadow: 6px 6px 0px white;
+}
+
+.noise {
+  position: absolute;
+  inset: 0;
+  opacity: 0.08;
+  pointer-events: none;
+  background-image: radial-gradient(#000 0.5px, transparent 0.5px);
+  background-size: 8px 8px;
+}
+
+/* Menyembunyikan kursor bawaan pada layar besar (Desktop) */
+@media (min-width: 768px) {
+  * {
+    cursor: none !important;
+  }
 }
