@@ -14,7 +14,6 @@ export default function CustomCursor() {
 
     const handleMouseOver = (e: MouseEvent) => {
       const target = e.target as HTMLElement;
-      // Cek apakah mouse berada di atas tombol atau link
       if (
         target.tagName.toLowerCase() === "a" ||
         target.tagName.toLowerCase() === "button" ||
@@ -43,8 +42,6 @@ export default function CustomCursor() {
       transition={{ type: "spring", stiffness: 2000, damping: 50, mass: 0.1 }}
     >
       {isHovering ? (
-        /* ================= KURSOR HOVER: RETRO PC MONITOR ================= */
-        /* Digeser tepat setengah ukuran (-22px) agar titik klik tepat di tengah layar komputer */
         <div className="relative -left-[22px] -top-[22px] transition-transform duration-200">
           <svg width="44" height="44" viewBox="0 0 32 32" fill="none" stroke="black" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" className="drop-shadow-[4px_4px_0px_black] scale-110 rotate-[-5deg]">
             {/* Monitor Bezel (Bingkai) */}
@@ -65,7 +62,6 @@ export default function CustomCursor() {
           </svg>
         </div>
       ) : (
-        /* ================= KURSOR NORMAL: CHUNKY ARROW ================= */
         <div className="relative -left-[8px] -top-[4px] transition-transform duration-200">
           <svg width="36" height="36" viewBox="0 0 32 32" fill="#00d9ff" stroke="black" strokeWidth="2" strokeLinejoin="round" className="drop-shadow-[4px_4px_0px_black]">
             <path d="M7 3 L7 27 L13 21 L18 31 L22 29 L17 19 L25 18 Z" />
