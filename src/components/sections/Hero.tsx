@@ -25,7 +25,7 @@ export default function Hero() {
 
                     {/* Heading */}
                     <h1
-                        className=" text-5xl md:text-6xl lg:text-7xl font-black uppercase leading-none"
+                        className="text-5xl md:text-6xl lg:text-7xl font-black uppercase leading-none"
                     >
                         Muhammad <br />
                         Jati <br />
@@ -34,9 +34,10 @@ export default function Hero() {
 
                     {/* Deskripsi */}
                     <p
-                        className=" mt-8 text-lg md:text-xl font-bold max-w-2xl leading-relaxed"
+                        className="mt-8 text-lg md:text-xl max-w-2xl leading-relaxed"
                     >
-                        Fullstack Developer dengan pengalaman 2+ tahun mengembangkan solusi digital berbasis Laravel, CodeIgniter, SQL, serta integrasi Machine Learning.
+                        Biasa dikenal sebagai <strong>Jati Nugroho</strong>. Saya adalah <strong>Fullstack Developer</strong> di PT Garuda Cyber Indonesia dengan pengalaman 2+ tahun. <br className="hidden md:block" /> 
+                        Berfokus pada pengembangan solusi digital <em>end-to-end</em> menggunakan ekosistem <strong>Laravel, CodeIgniter, Next.js, Node.js</strong>, serta integrasi <strong>Machine Learning</strong>.
                     </p>
 
                     {/* Social Links (Opsional: Sesuaikan link dengan profil asli Anda) */}
