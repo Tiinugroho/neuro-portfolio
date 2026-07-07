@@ -51,7 +51,7 @@ export default function Hero() {
                             <FaGithub className="text-2xl" />
                         </a>
                         <a
-                            href="https://www.linkedin.com/in/jatinugrohoo/" // Ganti dengan link LinkedIn Anda
+                            href="https://www.linkedin.com/in/muhammad-jati-nugroho/" // Ganti dengan link LinkedIn Anda
                             target="_blank"
                             rel="noopener noreferrer"
                             className="neuro-button bg-[#0077b5] text-white p-3 hover:-translate-y-1 transition-transform"
