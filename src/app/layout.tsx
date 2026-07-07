@@ -5,8 +5,9 @@ import Providers from "@/providers/ThemeProvider";
 import CustomCursor from "@/components/ui/CustomCursor";
 
 export const metadata: Metadata = {
-  title: "Jati Nugroho - Fullstack Developer",
+  title: "Muhammad Jati Nugroho - Fullstack Developer",
   description: "Modern Neurobrutalism Portfolio",
+  content: "Portofolio resmi Muhammad Jati Nugroho, juga dikenal sebagai Jati Nugroho. Fullstack Developer di PT Garuda Cyber Indonesia dengan keahlian PHP, Laravel, Next.js, dan UI/UX Design.",
 };
 
 export default function RootLayout({
